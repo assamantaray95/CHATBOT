@@ -1,0 +1,48 @@
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+.text-container {
+  width: 100%; /* Ensures the container takes up full width */
+  max-width: 600px; /* Limits the maximum width */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding-left: 20px; /* Adds padding on the left */
+  padding-right: 20px; /* Adds padding on the right */
+  font-family: Arial, sans-serif;
+  font-size: 14px; /* Adjusts font size */
+  text-align: left; /* Ensures text starts from the left */
+  white-space: pre-wrap; /* Ensures the text wraps properly */
+  word-wrap: break-word; /* Breaks long words onto the next line */
+}
+
+
+.typing-effect {
+  display: inline-block;
+  border-right: 2px solid black; /* Simulates the blinking cursor */
+  padding-right: 4px; /* Adds a small gap for the "cursor" */
+  white-space: nowrap; /* Ensures the lines are displayed one after another */
+  overflow: hidden; /* Hides overflowing text */
+  animation: typing 1s steps(20) 0s 1 normal both, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Start with no visible text */
+  }
+  to {
+    width: 100%; /* Gradually reveal the text */
+  }
+}
+
+@keyframes blink {
+  100% {
+    border-color: transparent; /* Makes the cursor blink by making the border transparent */
+  }
+}
+
+.table-bordered>:not(caption)>*>* {
+  background-color: #dddddd;
+}
